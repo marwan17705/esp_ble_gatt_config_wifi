@@ -24,14 +24,13 @@ enum
 
 typedef enum
 {
-    TASK_TIMER_OVER, // raised during an iteration of the loop within the task
+    TASK_TIMER_OVER,
     TASK_TIMER_INTER
 } TIMER_EVENT;
 
 void setup_pin();
 esp_err_t register_event_gpio(esp_event_handler_t task_iteration_handler);
-// void light_on();
-// void light_off();
+
 void light_adv_on();
 
 void light_adv_off();
